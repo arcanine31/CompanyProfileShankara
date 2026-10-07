@@ -1,0 +1,49 @@
+{% load static %}
+
+
+<!--=============== Start Header Section  ===============-->
+<header class="speedyui speedyui-header">
+    <nav class="navbar navbar-expand-lg py-2 align-items-center">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <img src="{% static 'images/logo_hor_white.png'%}" alt="" width="323" height="50">
+            </a><!--brand identity--> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!-- Home -->
+                    <li class="nav-item py-2 py-lg-4">
+                        <a class="nav-link px-lg-4 py-0 
+                            {% if request.resolver_match.url_name == 'home' %}active{% endif %}" 
+                           href="{% url 'home' %}">Beranda</a>
+                    </li>
+
+                    <!-- About -->
+                    <li class="nav-item py-2 py-lg-4">
+                        <a class="nav-link px-lg-4 py-0 
+                            {% if request.resolver_match.url_name == 'page' and request.resolver_match.kwargs.page == 'about' %}active{% endif %}" 
+                           href="{% url 'page' 'about' %}">Tentang Kami</a>
+                    </li>
+
+                    <!-- Service -->
+                    <li class="nav-item py-2 py-lg-4">
+                        <a class="nav-link px-lg-4 py-0 
+                            {% if request.resolver_match.url_name == 'page' and request.resolver_match.kwargs.page == 'service' %}active{% endif %}" 
+                           href="{% url 'page' 'service' %}">Layanan</a>
+                    </li>
+
+                    <!-- Project -->
+                    <li class="nav-item py-2 py-lg-4">
+                        <a class="nav-link px-lg-4 py-0 
+                            {% if request.resolver_match.url_name == 'page' and request.resolver_match.kwargs.page == 'project' %}active{% endif %}" 
+                           href="{% url 'page' 'project' %}">Projek</a>
+                    </li><!--.nav-item-->
+                </ul><!--.navbar-nav-->
+            </div><!--.navbar-collapse-->
+        </div><!--.container--> 
+    </nav><!--nav-->
+</header><!--.speedyui-header-->
+<!--=============== End Header Section  ===============-->

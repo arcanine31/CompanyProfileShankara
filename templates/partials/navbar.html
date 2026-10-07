@@ -1,0 +1,269 @@
+{% load static %}
+<!--=============== Start Header Section  ===============-->
+<header class="speedyui speedyui-header speedyui-offcanvas position-absolute w-100">
+    <div class="main-nav">
+        <nav class="navbar navbar-expand-lg nav-bg py-4 py-lg-0">
+          <div class="container">
+              <div class="logo-wrapper">
+                  <a href="#"><img src="https://s3.amazonaws.com/speedyui-static/navbar-horizontal/logo-white.png" class="logo" alt=""></a>
+              </div><!--.logo-wrapper-->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarToggler">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                  </a>
+                  <ul class="dropdown-menu rounded-3 py-2">
+                      <li><a class="dropdown-item my-1" href="#">All Services</a></li>
+                      <li><a class="dropdown-item my-1" href="#">Digital Marketing</a></li>
+                      <li><a class="dropdown-item my-1" href="#">UX/UI Design</a></li>
+                      <li><a class="dropdown-item my-1" href="#">Web Development</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pages
+                  </a>
+                  <ul class="dropdown-menu rounded-3 py-2">
+                      <li><a class="dropdown-item my-1" href="#">Portfolio</a></li>
+                      <li><a class="dropdown-item my-1" href="#">Pricing</a></li>
+                      <li><a class="dropdown-item my-1" href="#">FAQ's</a></li>
+                      <li><a class="dropdown-item my-1" href="#">Sign In</a></li>
+                      <li><a class="dropdown-item my-1" href="#">Sign Up</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul> 
+            </div><!--.navbar-collapse-->
+            <ul class="nav-controls d-flex align-items-center ms-auto">
+                <li class="list-inline-item ms-xl-3 m-0">
+                    <a class="d-none d-lg-inline-block offcanvas-toggle" data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas">
+                        <span class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                              </svg>
+                        </span>
+                    </a><!--.for-desktop-->
+                    <a class="d-block d-lg-none offcanvas-toggle" data-bs-toggle="offcanvas" href="#offcanvas-mobile" role="button" aria-controls="offcanvas-mobile">
+                        <span class="icon-wrapper d-flex align-items-center justify-content-center position-relative rounded-pill overflow-hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                              </svg>
+                        </span>
+                    </a><!--.for-mobile-->
+                </li>
+            </ul>
+          </div><!--.container-->
+        </nav><!--.navbar-->
+    </div><!--.main-nav-->
+    <div class="offcanvas offcanvas-desktop offcanvas-end text-bg-dark shadow border-0 d-none d-lg-flex bg-dark" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header px-4 py-0 px-md-5 mb-5">
+            <div class="w-100 d-flex flex-column align-items-start border-bottom py-4">
+                <button type="button" class="btn-close btn-close-white shadow-none ps-0 mb-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <img src="https://s3.amazonaws.com/speedyui-static/navbar-horizontal/logo-white.png" alt="">
+            </div>
+        </div><!--.offcanvas-header-->
+        <div class="offcanvas-body d-flex flex-column justify-content-between px-4 px-lg-5 pt-0 pb-4">
+            <div>
+                <div class="mb-5">
+                    <p class="mb-4">Think Creative Agency are a full-service design, communications and branding agency There are many variations of passages of Lorem Ipsum available.</p>
+                    <img src="https://speedyui-static.s3.amazonaws.com/blog/blog-1.jpg" class="img-fluid" alt="">
+                </div>
+                <h4 class="fs-4 fw-semibold mb-3">Contact Us</h4>
+                <ul class="contact-list list-unstyled">
+                    <li>
+                        <a href="#" class="d-flex align-items-start text-decoration-none gap-3 mb-4">
+                            <span class="contact-icon d-inline-flex align-items-center mt-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                </svg>
+                            </span>
+                            70 Washington Square South, New York, United States
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex align-items-start text-decoration-none gap-3 mb-4">
+                            <span class="contact-icon lh-lg d-inline-flex align-items-center mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                                </svg>
+                            </span>
+                            support@yoursite.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex align-items-start text-decoration-none gap-3 mb-4">
+                            <span class="contact-icon d-inline-flex align-items-center mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                </svg>
+                            </span>
+                            ( +1 ) 11 22 33 44
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="social-listing d-flex align-items-center gap-4 list-unstyled mt-auto">
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                            <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-slack" viewBox="0 0 16 16">
+                            <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul><!--.social-listing-->
+        </div><!--.offcanvas-body-->
+    </div><!--.offcanvas-desktop-->
+    <div class="offcanvas offcanvas-mobile offcanvas-end d-block d-lg-none bg-dark p-3" tabindex="-1" id="offcanvas-mobile" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header justify-content-between px-4 py-0 mt-4 mb-5">
+            <img src="https://s3.amazonaws.com/speedyui-static/navbar-horizontal/logo-white.png" alt="">
+            <button type="button" class="btn-close btn-close-white rounded-pill shadow-none p-3 pe-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div><!--.offcanvas-header-->
+        <div class="offcanvas-body p-0 pb-4">
+            <ul class="offcanvas-listing list-unstyled">
+                <li>
+                    <a class="nav-link p-3 px-4" href="#">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link p-3 px-4" href="#">
+                        Team
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link d-flex align-items-center justify-content-between collapsed p-3 px-4" href="#services" data-bs-toggle="collapse" aria-expanded="false" aria-controls="services">
+                        Services
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="services" data-bs-parent="#offcanvas">
+                        <li>
+                            <a class="nav-link ps-5 py-3" href="#">UI Designer</a>
+                        </li>
+                        <li>
+                            <a class="nav-link ps-5 py-3" href="#">Web Developer</a>
+                        </li>
+                        <li>
+                            <a class="nav-link ps-5 py-3" href="#">SEO Optimization</a>
+                        </li>
+                        <li>
+                            <a class="nav-link ps-5 py-3" href="#">Digital Marketing</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nav-link p-3 px-4" href="#">
+                        News
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link fw-semibold p-3 px-4" href="#">
+                        FAQ's
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link p-3 px-4" href="#">
+                        Contact
+                    </a>
+                </li>
+            </ul><!--.offcanvas-listing-->
+            <ul class="social-listing d-flex align-items-center gap-4 list-unstyled px-4 mt-5">
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                        <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                    </svg>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/>
+                    </svg>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-slack" viewBox="0 0 16 16">
+                        <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/>
+                    </svg>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                    </svg>
+                </li>
+            </ul><!--.social-listing-->
+        </div><!--.offcanvas-body-->
+    </div><!--.offcanvas-mobile-->
+</header>
+<!--=============== End Header Section  ===============-->
+<!--==================== Start Hero Section =====================-->
+<section class="speedyui speedyui-hero position-relative overflow-hidden bg-dark">
+    <div class="container">
+        <div class="row align-items-center py-lg-5">
+            <div class="col-lg-6 my-2">
+                <div class="hero-content">
+                    <ul class="cat-list list-unstyled d-flex mb-3">
+                        <li class="pe-2"><a href="#" class="text-decoration-none">Tech</a></li>
+                        <li class="pe-2"><a href="#" class="text-decoration-none">Design</a></li>
+                    </ul>
+                    <h1 class="hero-heading mb-4 fw-semibold display-4">Designing and Marketing Services</h1>
+                    <div class="row">
+                        <div class="col-md-6 my-md-3">
+                            <div class="hero-feature py-2">
+                                <h4 class="fs-6 text-uppercase mb-2">Web design</h4>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div><!--.col-grid-->
+                        <div class="col-md-6 my-md-3">
+                            <div class="hero-feature py-2">
+                                <h4 class="fs-6 text-uppercase mb-2">Digital Marketing</h4>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div><!--.col-grid-->
+                    </div><!--.row-->
+                    <a href="#" class="btn btn-md px-3 text-uppercase">Get started</a>
+                </div><!--.hero-content-->
+            </div><!--.col-grid-->
+            <div class="col-lg-6 my-2">
+                <img src="https://speedyui-static.s3.amazonaws.com/header/header-6/hero-img.png" class="img-fluid" alt="" />
+            </div><!--.col-grid-->
+        </div><!--.row-->
+    </div><!--.container-->
+    <div class="circle-one d-none d-lg-block position-absolute"></div><!--.circle-one-->
+    <div class="circle-two d-none d-lg-block position-absolute"></div><!--.circle-two-->
+</section>
+<!--==================== End Hero Section =====================-->
